@@ -1,8 +1,14 @@
 import React from 'react'
 
+import Container from '@/components/ContainerPage'
+
 const index = () => {
   return (
-    <div>index</div>
+    <Container>
+      <div>
+        <h1>AI Humans</h1>
+      </div>
+    </Container>
   )
 }
 

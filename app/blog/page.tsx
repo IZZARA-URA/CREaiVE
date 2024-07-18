@@ -1,8 +1,15 @@
 import React from 'react'
 
+
+import Container from '@/components/ContainerPage'
+
 const index = () => {
   return (
-    <div>index</div>
+    <Container>
+      <div>
+        <h1>Bolg</h1>
+      </div>
+    </Container>
   )
 }
 
