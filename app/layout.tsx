@@ -18,13 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="font-SanFranciscoPro">
       <body>
-        <div className="absolute">
+        <div className="absolute z-10">
           <NavBar />
         </div>
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

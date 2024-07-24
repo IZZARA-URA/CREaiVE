@@ -1,5 +1,6 @@
-import { error } from "console";
+
 import type { Config } from "tailwindcss";
+
 
 const config: Config = {
   content: [
@@ -13,6 +14,24 @@ const config: Config = {
 
       },
       fontFamily: {
+        // Pro
+        pro: ["SanFranciscoPro", "sans-serif"],
+        //  ProDisplay
+        proDisplayBold: ["SanFranciscoProDisplay_Bold", "sans-serif"],
+        proDisplayHeavy: ["SanFranciscoProDisplay_Heavy", "sans-serif"],
+        proDisplayLight: ["SanFranciscoProDisplay_Light", "sans-serif"],
+        proDisplayMedium: ["SanFranciscoProDisplay_Medium", "sans-serif"],
+        proDisplayRegular: ["SanFranciscoProDisplay_Regular", "sans-serif"],
+        proDisplaySemibold: ["SanFranciscoProDisplay_Semibold", "sans-serif"],
+        proDisplayThin: ["SanFranciscoProDisplay_Thin", "sans-serif"],
+        // ProText
+        proTextBold: ["SanFranciscoProText_Bold", "sans-serif"],
+        proTextHeavy: ["SanFranciscoProText_Heavy", "sans-serif"],
+        proTextLight: ["SanFranciscoProText_Light", "sans-serif"],
+        proTextMedium: ["SanFranciscoProText_Medium", "sans-serif"],
+        proTextRegular: ["SanFranciscoProText_Regular", "sans-serif"],
+        proTextSemibold: ["SanFranciscoProText_Semibold", "sans-serif"],
+        proTextThin: ["SanFranciscoProText_Thin", "sans-serif"],
 
       },
       colors: {

@@ -1,3 +1,98 @@
+/* Pro */
+@font-face {
+  font-family: "SanFranciscoPro";
+  src: url('../public/fonts/SanFranciscoPro/SF-Pro.ttf')
+  format('truetype');
+}
+
+/* ProDisplay */
+@font-face {
+  font-family: "SanFranciscoProDisplay_Bold";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Bold.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Heavy";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Heavy.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Light";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Light.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Medium";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Medium.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Regular";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Regular.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Semibold";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Semibold.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProDisplay_Thin";
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Thin.otf')
+  format('otf');
+}
+
+
+
+/* ProText */
+@font-face {
+  font-family: "SanFranciscoProText_Bold";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Bold.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Heavy";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Heavy.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Light";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Light.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Medium";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Medium.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Regular";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Regular.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Semibold";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Semibold.otf')
+  format('otf');
+}
+
+@font-face {
+  font-family: "SanFranciscoProText_Thin";
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Thin.otf')
+  format('otf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
