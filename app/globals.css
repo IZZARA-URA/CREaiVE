@@ -1,51 +1,43 @@
 /* Pro */
 @font-face {
   font-family: "SanFranciscoPro";
-  src: url('../public/fonts/SanFranciscoPro/SF-Pro.ttf')
-  format('truetype');
+  src: url('../public/fonts/SanFranciscoPro/SF-Pro.ttf') format('truetype');
 }
 
 /* ProDisplay */
 @font-face {
   font-family: "SanFranciscoProDisplay_Bold";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Bold.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Bold.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Heavy";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Heavy.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Heavy.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Light";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Light.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Light.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Medium";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Medium.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Medium.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Regular";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Regular.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Regular.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Semibold";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Semibold.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Semibold.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProDisplay_Thin";
-  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Thin.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProDisplay/SF-Pro-Display-Thin.otf') format('otf');
 }
 
 
@@ -53,45 +45,46 @@
 /* ProText */
 @font-face {
   font-family: "SanFranciscoProText_Bold";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Bold.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Bold.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Heavy";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Heavy.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Heavy.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Light";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Light.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Light.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Medium";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Medium.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Medium.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Regular";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Regular.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Regular.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Semibold";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Semibold.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Semibold.otf') format('otf');
 }
 
 @font-face {
   font-family: "SanFranciscoProText_Thin";
-  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Thin.otf')
-  format('otf');
+  src: url('../public/fonts/SanFranciscoProText/SF-Pro-Text-Thin.otf') format('otf');
 }
+
+@layer utilities {
+  .font-SanFrancisco {
+    font-family: "SanFranciscoPro";
+    src: url('../public/fonts/SanFranciscoPro/SF-Pro.ttf') format('truetype');
+  }
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -125,7 +118,55 @@ body {
 }
 
 
+/* Max Width Container */
+.container {
+  @apply xl:max-w-[1440px] mx-auto;
+}
 
-.container{
-  @apply max-w-[1440px] mx-auto;
+
+
+
+/* Buttons */
+.ButtonPrimary {
+  @apply w-full h-[50px] bg-white rounded-[20px] font-SanFrancisco text-black text-lg font-bold uppercase hover:bg-black hover:text-white hover:border-white hover:border-2;
+}
+
+.ButtonPrimaryKeepHover {
+  @apply w-full h-[50px] rounded-[20px] font-SanFrancisco text-lg font-bold uppercase bg-black text-white border-white border-2 hover:bg-white hover:text-black;
+}
+
+.ButtonSecondary {
+  @apply w-full h-[50px] bg-secondaryDark-0 rounded-[20px] font-SanFrancisco text-white text-lg font-bold uppercase hover:bg-black hover:text-secondaryDark-0 hover:border-secondaryDark-0 hover:border-2;
+}
+
+.ButtonSecondaryKeepHover {
+  @apply w-full h-[50px] rounded-[20px] font-SanFrancisco text-lg text-secondaryDark-0 font-bold uppercase hover:bg-secondaryDark-0 hover:text-white border-2 border-secondaryDark-0 hover:border-2;
+}
+
+/* Scroll Bar */
+.scrollerbar-hide::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  height: "140px";
+  /* height: "140px";
+  background-color: 'red'; */
+  /* background-color: transparent; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+
+.scrollerbar-hide::-webkit-scrollbar-track {
+  height: "140px";
+  background-color: 'red';
+}
+/* .scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+} */
+
+.scrollerbar-hide::-webkit-scrollbar-thumb {
+  
+  background-color: #40bb13;
+  height: 40px;
+  top: 0px;
+  /* background-color: transparent; */
 }
