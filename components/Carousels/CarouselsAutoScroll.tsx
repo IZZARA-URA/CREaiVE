@@ -30,7 +30,7 @@ const ContainerCards = () => {
     );
 }
 
-const CarouselsAutoScroll: React.FC = ({  }) => {
+const CarouselsAutoScroll: React.FC = ({ }) => {
     return (
         <Carousel
             prevArrow={false}
@@ -94,10 +94,6 @@ const CarouselsAutoScroll: React.FC = ({  }) => {
             <ContainerCards />
             <ContainerCards />
             <ContainerCards />
-            {/* <ContainerCards />
-            <ContainerCards />
-            <ContainerCards /> */}
-            
         </Carousel>
     )
 }

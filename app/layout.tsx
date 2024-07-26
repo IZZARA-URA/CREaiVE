@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-SanFranciscoPro">
       <body>
-        <div className="absolute z-10">
-          <NavBar />
-        </div>
+        <NavBar />
+
         {children}
-        {/* <Footer /> */}
+
+        <Footer />
       </body>
     </html>
   );

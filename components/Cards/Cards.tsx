@@ -52,7 +52,7 @@ const Cards: React.FC<CardProps> = (
                     {
                         body?.map((bodyText) => {
                             return (
-                                <div className='mt-4'>
+                                <div className='mt-4' key={bodyText}>
                                     {bodyText}
                                 </div>
                             )

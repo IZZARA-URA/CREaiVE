@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="absolute -z-10 w-screen h-[200vh]">
+      <div className="w-screen h-[200vh]">
         <Container>
           <Header
             topic={`Our impact for the business in Real-World`}
