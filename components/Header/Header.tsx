@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = (
     }
 ) => {
   return (
-    <div className='w-full py-[120px]'>
+    <div className='w-full pt-[18vh] '>
         <div className='font-proDisplayRegular text-[60px] text-center'>
             { topic }
         </div>

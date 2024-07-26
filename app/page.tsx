@@ -6,7 +6,8 @@ import Header from "@/components/Header/Header";
 import Container from "@/components/ContainerPage";
 import Buttons from "@/components/Buttons/Button"
 import Carousels from "@/components/Carousels/Carousels";
-import type { CarouselProps } from "@material-tailwind/react";
+import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
+
 import {
   Cards,
   CardsCol_1
@@ -19,7 +20,7 @@ export default function Home() {
       <div className="absolute -z-10 w-screen h-[200vh]">
         <Container>
           <Header
-            topic={`Ourimpact for the business in Real-World`}
+            topic={`Our impact for the business in Real-World`}
             tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
           />
           <div className="grid grid-cols-4 gap-4 py-2">
@@ -43,9 +44,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-4 py-8 ">
-            <Carousels className="w-full max-h-[600px]">
+            <Carousels className="w-full max-h-[600px] ">
               {/*  */}
-              <div className="grid grid-cols-12 gap-4 items-center text-center">
+              <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
                 {/*  */}
                 <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
                   01
@@ -75,7 +76,7 @@ export default function Home() {
 
 
               {/*  */}
-              <div className="grid grid-cols-12 gap-4 items-center text-center">
+              <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
                 {/*  */}
                 <div className="w-full h-[600px] col-span-7">
                   <div className="grid grid-cols-4 gap-4 max-h-[300px] h-full pb-2">
@@ -105,57 +106,20 @@ export default function Home() {
             </Carousels>
           </div>
           {/*  */}
-          <div className="w-[80%] m-auto md:overflow-scroll bg-red-500 overflow-auto h-[125px] scrollerbar-hide rounded-[20px]">
-            <div className=" h-full w-[2880px] grid grid-cols-12 gap-4 scrollerbar-hide">
-              <div className="bg-blue-gray-200">
-                00
-              </div>
 
-              <div className="bg-blue-gray-200">
-                01
-              </div>
+          <div className="grid grid-cols-12 ">
+            <div className="col-start-1">
 
-              <div className="bg-blue-gray-200">
-                02
-              </div>
-
-              <div className="bg-blue-gray-200">
-                03
-              </div>
-
-              <div className="bg-blue-gray-200">
-                00
-              </div>
-
-              <div className="bg-blue-gray-200">
-                01
-              </div>
-
-              <div className="bg-blue-gray-200">
-                02
-              </div>
-
-              <div className="bg-blue-gray-200">
-                03
-              </div>
-
-              <div className="bg-blue-gray-200">
-                00
-              </div>
-
-              <div className="bg-blue-gray-200">
-                01
-              </div>
-
-              <div className="bg-blue-gray-200">
-                02
-              </div>
-
-              <div className="bg-blue-gray-200">
-                03
-              </div>
             </div>
+            <div className="col-span-10">
+              <CarouselsAutoScroll />
+            </div>
+            <div className="col-start-1">
+
+            </div>
+
           </div>
+
         </Container>
       </div>
     </div>
