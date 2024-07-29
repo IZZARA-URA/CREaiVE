@@ -15,7 +15,7 @@ const Carousels: React.FC<CarouselProps> = ({ children }) => {
             transition={{ duration: 10 }}
             className="rounded-[20px] max-h-[600px] scroll-smooth focus:scroll-auto"
             navigation={({ setActiveIndex, activeIndex, length }) => (
-                <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2 " key={length}>
+                <div className=" bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2 " key={length}>
                     {new Array(length).fill("").map((_, i) => (
                         <span
                             key={i}
