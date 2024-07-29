@@ -1,8 +1,6 @@
-
 import type { Config } from "tailwindcss";
 
 const withMT = require("@material-tailwind/react/utils/withMT");
-
 
 const config: Config = withMT({
   content: [
@@ -12,9 +10,20 @@ const config: Config = withMT({
   ],
   theme: {
     extend: {
-      fontSize: {
+      screens: {
+        'xs': '475px',
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": '1440px',
+        '3xl': '1600px',
 
+        'tablet': '640px',
+        'laptop': '1024px',
+        'desktop': '1280px',
       },
+      fontSize: {},
       fontFamily: {
         // Pro
         pro: ["SanFranciscoPro", "sans-serif"],
@@ -34,7 +43,6 @@ const config: Config = withMT({
         proTextRegular: ["SanFranciscoProText_Regular", "sans-serif"],
         proTextSemibold: ["SanFranciscoProText_Semibold", "sans-serif"],
         proTextThin: ["SanFranciscoProText_Thin", "sans-serif"],
-
       },
       colors: {
         primary: {
@@ -47,7 +55,7 @@ const config: Config = withMT({
           600: "#602273",
           700: "#481956",
           800: "#30113a",
-          900: "#18081d"
+          900: "#18081d",
         },
         secondary: {
           0: "#0e113f",
@@ -59,7 +67,7 @@ const config: Config = withMT({
           600: "#0b0e32",
           700: "#080a26",
           800: "#060719",
-          900: "#03030d"
+          900: "#03030d",
         },
         complementary: {
           0: "#47c2cb",
@@ -71,7 +79,7 @@ const config: Config = withMT({
           600: "#399ba2",
           700: "#2b747a",
           800: "#1c4e51",
-          900: "#0e2729"
+          900: "#0e2729",
         },
         neutrals: {
           100: "#fefefe",
@@ -82,13 +90,13 @@ const config: Config = withMT({
           600: "#c8c8c8",
           700: "#969696",
           800: "#646464",
-          900: "#323232"
+          900: "#323232",
         },
         parimaryDark: {
-          0: "#BF5AF2"
+          0: "#BF5AF2",
         },
         secondaryDark: {
-          0: "#0A84FF"
+          0: "#0A84FF",
         },
         grayDefaultLight: {
           0: "#8e8e93",
@@ -124,13 +132,12 @@ const config: Config = withMT({
           100: "#fac6c5",
           200: "#f48c8a",
           300: "#cb1613",
-        }
+        },
       },
     },
   },
-  plugins: [
-  ],
-})
+  plugins: [],
+});
 
 export default config;
 

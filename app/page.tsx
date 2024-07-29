@@ -12,108 +12,37 @@ import { Cards, CardsCol_1 } from "@/components/Cards/Cards";
 
 export default function Home() {
   return (
-    <div className="w-screen h-[200vh]">
-      <Container>
-        <Header
-          topic={`Our impact for the business in Real-World`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
-        />
-        <div className="grid grid-cols-4 gap-4 py-2">
-          <Buttons text="request demo" type="Primary" />
-          <Buttons text="request demo" type="PrimaryHover" />
-          <Buttons text="request demo" type="Secondary" />
-          <Buttons text="request demo" type="Terialy" />
-        </div>
-        <div className="grid grid-cols-1 gap-4 py-8">
-          <CardsCol_1
-            type="Primary"
-            topic="Holovue"
-            body={[
-              "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
-              "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
-            ]}
-          />
-        </div>
-        <div className="grid grid-cols-3 gap-4 py-8">
-          <Cards
-            type="Primary"
-            topic="AI Humans"
-            body={[
-              "We create AI influencers, AI Chatbot, and AI Clones that replicate real people with astonishing accuracy Whether you need a digital brand ambassador or virtual ssistant our AI humans can enhance your brands presence",
-            ]}
-          />
-          <Cards type="Secondary" />
-          <Cards type="Tertiary" />
-        </div>
-
-        <div className="grid grid-cols-1 gap-4 py-8 ">
-          <Carousels className="w-full max-h-[600px] ">
-            {/*  */}
-            <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
-              {/*  */}
-              <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
-                01
-              </div>
-              {/*  */}
-              <div className="w-full h-[600px] col-span-7">
-                <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pb-2">
-                  <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                    02
-                  </div>
-
-                  <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full">
-                    03
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pt-2">
-                  <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full">
-                    04
-                  </div>
-                  <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                    05
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/*  */}
-            <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
-              {/*  */}
-              <div className="w-full h-[600px] col-span-7">
-                <div className="grid grid-cols-4 gap-4 max-h-[300px] h-full pb-2">
-                  <div className="col-span-2 bg-grayDefaultDark-500 rounded-[20px] h-full">
-                    02
-                  </div>
-
-                  <div className="col-span-2 bg-grayDefaultDark-200 rounded-[20px] h-full">
-                    03
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 gap-4 max-h-[300px] h-full pt-2">
-                  <div className="col-span-2 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                    04
-                  </div>
-                </div>
-              </div>
-              {/*  */}
-              <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
-                01
-              </div>
-            </div>
-          </Carousels>
-        </div>
-        {/*  */}
-
-        <div className="grid grid-cols-12 ">
-          <div className="col-start-1"></div>
-          <div className="col-span-10">
-            <CarouselsAutoScroll />
+    <Container>
+      <Image
+        layout="fill"
+        sizes="100vw"
+        src="/HomeImage.png"
+        alt="HomeImage"
+        style={{
+          display: "absolute",
+          zIndex: "-50",
+        }}
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="">
+          <div className="w-full text-[100px] font-bold pt-[20vh] leading-[100px] uppercase text-justify">
+            Rise of the
           </div>
-          <div className="col-start-1"></div>
+          <div className="w-full text-[110px] font-bold leading-[100px] uppercase text-justify">
+            AI Humans
+          </div>
+
+          <div className="text-[20px] pr-20 pt-10 text-justify">
+            Welcome to CREAIVE, Where CREATIVITY and AI CONVERGE!, We are a
+            generative AI lab that specializes in making content for any
+            creative application. Our goal is to help brands and agencies
+            streamline traditional workflows by operationalizing AI into
+            thecreative process.
+          </div>
         </div>
-      </Container>
-    </div>
+
+        <div></div>
+      </div>
+    </Container>
   );
 }
