@@ -139,29 +139,31 @@ export default function Home() {
           </div>
         </Carousels>
 
-        <div className="py-20">
+        <div className="py-10">
           <CarouselsAutoScroll />
         </div>
       </div>
       {/* END REAL WORLD CONTAINER */}
 
 
-      {/* START PRODUCT CONTAINER */}
+      {/* START PRODUCTs CONTAINER */}
       <div className="h-auto">
         <Header
           topic={`Products`}
           tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
         />
-        <div className="grid grid-cols-1">
-          <CardScreen
-            type="Primary"
-            topic="Holovue"
-            body={[
-              "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
-              "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
-            ]}
-          />
-          <div className="grid grid-cols-3 gap-4 mt-4 h-[15vh]">
+        <div className="grid grid-cols-1 ">
+          <div className="h-[40vh]">
+            <CardScreen
+              type="Primary"
+              topic="Holovue"
+              body={[
+                "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
+                "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
+              ]}
+            />
+          </div>
+          <div className="grid grid-cols-3 gap-4 mt-4 h-[30vh]">
             <Cards type="Secondary" >
 
             </Cards>
@@ -173,7 +175,7 @@ export default function Home() {
             </Cards>
           </div>
         </div>
-        {/* END PRODUCT CONTAINER */}
+        {/* END PRODUCTs CONTAINER */}
       </div>
 
 
@@ -184,7 +186,7 @@ export default function Home() {
           tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
         />
 
-        <div className="h-auto">
+        <div className="h-auto pb-[10vh]">
           <div className="grid grid-cols-2 gap-4 h-[20vh]">
             <Cards>
               TEST
@@ -194,13 +196,13 @@ export default function Home() {
             </Cards>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-4 h-[40vh]">
+          <div className="grid grid-cols-2 gap-4 pt-4 h-[50vh]">
             <Cards>
               Holovue
             </Cards>
 
             <div className="relative w-full h-full ">
-              <div className="absolute inset-x-0 bottom-[50%]">
+              <div className="absolute inset-x-0 bottom-[25%]">
                 <div className="font-bold text-4xl text-center w-full py-8">
                   HOLOVUE
                 </div>
@@ -210,9 +212,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
       {/* END USECASES CONTAINER */}
@@ -239,16 +239,16 @@ export default function Home() {
           topic={`Trusted by`}
           tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
         />
-        <CardsScreenTrustedBy
-          type="Primary"
-          topic="Holovue"
-          body={[
-            "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
-            "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
-          ]}
-        />
-
-
+        <div className="h-[70vh]">
+          <CardsScreenTrustedBy
+            type="Primary"
+            topic="Holovue"
+            body={[
+              "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
+              "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
+            ]}
+          />
+        </div>
       </div>
       {/* END TRUSTED BY CONTAINER */}
 

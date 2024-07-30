@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { CardProps } from '@/types'
 
 const VibrantPrimaryFill_CardCol_1 = {
-    upper: 'absolute w-full h-[20vh] bg-[#7F7F7F] rounded-[20px] pl-10 pr-2 py-2 bg-opacity-50 text-white',
-    lower: 'relative w-full h-[20vh] bg-[#C2C2C2] rounded-[20px] '
+    upper: 'absolute w-full h-full bg-[#7F7F7F] rounded-[20px] pl-10 pr-2 py-2 bg-opacity-50 text-white',
+    lower: 'relative w-full h-full bg-[#C2C2C2] rounded-[20px] '
 }
 
 
