@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Container>
       {/* START HOME THUMB CONTAINER */}
-      <div className="h-auto">
+      <div className="h-[90vh]">
         <div style={{ width: '100%' }}>
           <Image
             layout="fill"
