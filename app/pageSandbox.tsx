@@ -8,7 +8,7 @@ import Buttons from "@/components/Buttons/Button";
 import Carousels from "@/components/Carousels/Carousels";
 import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
 
-import { Cards, CardsCol_1 } from "@/components/Cards/Cards";
+import { Cards, CardScreen } from "@/components/Cards";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           <Buttons text="request demo" type="Terialy" />
         </div>
         <div className="grid grid-cols-1 gap-4 py-8">
-          <CardsCol_1
+          <CardScreen
             type="Primary"
             topic="Holovue"
             body={[
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 py-8 ">
-          <Carousels className="w-full max-h-[600px] ">
+          <Carousels className="w-full max-h-[600px]">
             {/*  */}
             <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
               {/*  */}
@@ -108,10 +108,10 @@ export default function Home() {
 
         <div className="grid grid-cols-12 ">
           <div className="col-start-1"></div>
-          <div className="col-span-10">
+          <div className="col-span-1">
             <CarouselsAutoScroll />
           </div>
-          <div className="col-start-1"></div>
+          <div className="col-span-1"></div>
         </div>
       </Container>
     </div>

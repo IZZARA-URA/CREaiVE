@@ -6,10 +6,8 @@ export default function Container({
     children: React.ReactNode;
 }>) {
     return (
-        <div className='max-w-[1280px] m-auto h-[90vh] items-center'>
-            <div className='w-full'>
-                {children}
-            </div>
+        <div className='max-w-[1280px] h-full m-auto md:px-2 items-center'>
+            {children}
         </div>
     )
 }

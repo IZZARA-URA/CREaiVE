@@ -4,7 +4,7 @@ import FooterContainer from './FooterContainer'
 
 const index = () => {
   return (
-    <div className='w-screen bg-grayDefaultDark-400 left-0 bottom-0'>
+    <footer className='w-screen bg-grayDefaultDark-400 left-0 bottom-0'>
       <FooterContainer>
         <div>
           <div className='w-full h-[4vh]'>
@@ -29,7 +29,7 @@ const index = () => {
           </div>
         </div>
       </FooterContainer>
-    </div>
+    </footer>
   )
 }
 

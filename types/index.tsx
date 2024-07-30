@@ -1,6 +1,8 @@
 
 
 
+// Children 
+// export PropsChildren 
 
 
 // Header
@@ -25,6 +27,10 @@ export interface ButtonProps {
 // Crads
 interface Bodies {
     body: string[];
+}
+
+type Props = {
+    children: JSX.Element | JSX.Element[]
 }
 
 export interface CardProps {

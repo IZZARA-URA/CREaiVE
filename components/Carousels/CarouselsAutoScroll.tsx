@@ -2,8 +2,6 @@
 import React from 'react'
 import { Carousel, IconButton } from "@material-tailwind/react";
 
-import type { CarouselProps } from "@material-tailwind/react";
-
 
 const Card = () => {
     return (
@@ -21,7 +19,8 @@ const Card = () => {
 
 const ContainerCards = () => {
     return (
-        <div className='flex w-[1200px] '>
+        <div className='flex w-auto '>
+            <Card />
             <Card />
             <Card />
             <Card />

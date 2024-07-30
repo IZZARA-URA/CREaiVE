@@ -7,8 +7,8 @@ import NavLinks from '@/components/NavBar/NavLinks'
 
 const index = () => {
   return (
-    <div className='w-screen py-3'>
-      <div className='flex justify-between max-w-[1280px] items-center m-auto'>
+    <div className='w-screen py-3 min-h-[3vh]'>
+      <div className='flex justify-between max-w-[1280px] m-auto md:px-2 items-center '>
         <Link href="/">CREAIVE</Link>
         <div className='hidden md:flex text-white'>
           <NavLinks />
