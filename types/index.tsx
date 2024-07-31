@@ -9,7 +9,7 @@
 export interface HeaderProps {
     children?: React.ReactNode;
     topic?: string;
-    tagline?: string;
+    tagline?: string[];
 }
 
 

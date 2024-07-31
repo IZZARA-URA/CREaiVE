@@ -8,14 +8,11 @@ import Buttons from "@/components/Buttons/Button";
 import Carousels from "@/components/Carousels/Carousels";
 import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
 
-
 import {
   Cards,
   CardScreen,
   CardsScreenTrustedBy
 } from "@/components/Cards";
-import gradient from "@material-tailwind/react/theme/components/timeline/timelineIconColors/gradient";
-
 
 export default function Home() {
   return (
@@ -79,7 +76,7 @@ export default function Home() {
       <div className="h-auto">
         <Header
           topic={`Our impact for the business in Real-World`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
+          tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
         <Carousels className="w-full max-h-[600px] pb-[20vh]">
@@ -150,7 +147,7 @@ export default function Home() {
       <div className="h-auto">
         <Header
           topic={`Products`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
+          tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
         <div className="grid grid-cols-1 ">
           <div className="h-[40vh]">
@@ -183,7 +180,7 @@ export default function Home() {
       <div className="h-auto">
         <Header
           topic={`Usecases`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
+          tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
         <div className="h-auto pb-[10vh]">
@@ -237,9 +234,9 @@ export default function Home() {
         />
         <Header
           topic={`Trusted by`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
+          tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
-        <div className="h-[70vh]">
+        <div className="h-[40vh]">
           <CardsScreenTrustedBy
             type="Primary"
             topic="Holovue"
@@ -257,7 +254,7 @@ export default function Home() {
       <div className="h-auto py-10">
         <Header
           topic={`Follow Us`}
-          tagline="Our tools can be helpful for your business, and make the impact to customers interacted make the choices."
+          tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
         <div className="grid grid-cols-4 gap-4 h-[30vh] my-20">

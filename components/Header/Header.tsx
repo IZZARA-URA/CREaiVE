@@ -10,16 +10,22 @@ const Header: React.FC<HeaderProps> = (
         tagline
     }
 ) => {
-  return (
-    <div className='w-full pt-[120px] pb-[40px]'>
-        <div className='font-proDisplayRegular text-[60px] text-center'>
-            { topic }
+    return (
+        <div className='w-full pt-[120px] pb-[40px]'>
+            <div className='font-proDisplayRegular text-[60px] text-center'>
+                {topic}
+            </div>
+            <div className='font-proDisplayRegular text-[18px] text-center'>
+                {tagline?.map((text) => {
+                    return (
+                        <div>
+                            {text}
+                        </div>
+                    )
+                })}
+            </div>
         </div>
-        <div className='font-proDisplayRegular text-[18px] text-center'>
-            { tagline }
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Header
