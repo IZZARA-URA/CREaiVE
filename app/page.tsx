@@ -5,8 +5,11 @@ import Video from "next-video";
 import Header from "@/components/Header/Header";
 import Container from "@/components/ContainerPage";
 import Buttons from "@/components/Buttons/Button";
-import Carousels from "@/components/Carousels/Carousels";
-import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
+import {
+  CarouselsLogosClients,
+  CarouselsAutoScroll 
+} from "@/components/Carousels/Carousels";
+// import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
 
 import {
   Cards,
@@ -79,7 +82,7 @@ export default function Home() {
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
-        <Carousels className="w-full max-h-[600px] pb-[20vh]">
+        <CarouselsLogosClients className="w-full max-h-[600px] pb-[20vh]">
           {/*  */}
           <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
             {/*  */}
@@ -134,7 +137,7 @@ export default function Home() {
               01
             </div>
           </div>
-        </Carousels>
+        </CarouselsLogosClients>
 
         <div className="py-10">
           <CarouselsAutoScroll />

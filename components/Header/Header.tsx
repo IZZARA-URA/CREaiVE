@@ -5,7 +5,7 @@ import { HeaderProps } from '@/types'
 
 
 const Header: React.FC<HeaderProps> = (
-    {
+    {   
         topic,
         tagline
     }
@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = (
             <div className='font-proDisplayRegular text-[18px] text-center'>
                 {tagline?.map((text) => {
                     return (
-                        <div>
+                        <div key={text}>
                             {text}
                         </div>
                     )

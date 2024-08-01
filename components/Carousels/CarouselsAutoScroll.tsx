@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
 
 
 const Card = () => {

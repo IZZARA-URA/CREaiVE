@@ -2,6 +2,7 @@
 import Cards from "./Cards"
 import CardScreen from "./CardsScreen";
 import CardsScreenTrustedBy from "./CardsScreenTrustedBy";
+import CardVideo from "./CardVideo";
 
 
 
@@ -9,5 +10,6 @@ import CardsScreenTrustedBy from "./CardsScreenTrustedBy";
 export {
     Cards,
     CardScreen,
-    CardsScreenTrustedBy
+    CardsScreenTrustedBy,
+    CardVideo
 }
