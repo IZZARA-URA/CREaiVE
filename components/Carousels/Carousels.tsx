@@ -1,4 +1,4 @@
-import CarouselsAutoScroll from "./CarouselsAutoScroll";
+import CarouselsTechnicalPartners from "./CarouselsTechnicalPartners";
 import CarouselsLogosClients from "./CarouselsLogosClients";
 import CarouselsPreviewRola from "./CarouselsPreviewRola";
 
@@ -6,7 +6,7 @@ import CarouselsPreviewRola from "./CarouselsPreviewRola";
 
 
 export {
-    CarouselsAutoScroll,
+    CarouselsTechnicalPartners,
     CarouselsLogosClients,
     CarouselsPreviewRola
 }

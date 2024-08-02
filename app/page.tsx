@@ -7,7 +7,7 @@ import Container from "@/components/ContainerPage";
 import Buttons from "@/components/Buttons/Button";
 import {
   CarouselsLogosClients,
-  CarouselsAutoScroll 
+  CarouselsTechnicalPartners
 } from "@/components/Carousels/Carousels";
 // import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
 
@@ -87,26 +87,46 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
             {/*  */}
             <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
-              01
+              <img
+                className="w-full h-full rounded-[20px] object-cover object-top"
+                src="amber.png"
+                alt="Placeholder"
+              />
             </div>
             {/*  */}
             <div className="w-full h-[600px] col-span-7">
               <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pb-2">
-                <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                  02
+                <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
+                  <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="aihumansNisa.png"
+                    alt="Placeholder"
+                  />
                 </div>
 
-                <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full">
-                  03
+                <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full overflow-hidden">
+                  {/* <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="aihumansNisa.png"
+                    alt="Placeholder"
+                  /> */}
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pt-2">
                 <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full">
-                  04
+                  {/* <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="amber.png"
+                    alt="Placeholder"
+                  /> */}
                 </div>
                 <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                  05
+                  <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="nic.png"
+                    alt="Placeholder"
+                  />
                 </div>
               </div>
             </div>
@@ -121,8 +141,12 @@ export default function Home() {
                   02
                 </div>
 
-                <div className="col-span-2 bg-grayDefaultDark-200 rounded-[20px] h-full">
-                  03
+                <div className="col-span-2 bg-grayDefaultDark-200 rounded-[20px] h-full overflow-hidden">
+                  <img
+                    className="w-full h-full rounded-[20px] object-cover object-top"
+                    src="aden.png"
+                    alt="Placeholder"
+                  />
                 </div>
               </div>
 
@@ -139,9 +163,9 @@ export default function Home() {
           </div>
         </CarouselsLogosClients>
 
-        <div className="py-10">
-          <CarouselsAutoScroll />
-        </div>
+
+        <CarouselsTechnicalPartners />
+
       </div>
       {/* END REAL WORLD CONTAINER */}
 
@@ -247,7 +271,66 @@ export default function Home() {
               "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
               "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
             ]}
-          />
+          >
+            <div className='flex w-full gap-4 justify-around opacity-80'>
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 06.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 07.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 08.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 09.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 10.png"
+                alt="Placeholder"
+              />
+            </div>
+            {/*  */}
+            <div className='flex w-full gap-4 justify-around opacity-80'>
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 01.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 02.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 03.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 04.png"
+                alt="Placeholder"
+              />
+              <img
+                className="w-[100px] h-[100px] rounded-[20px]"
+                src="/logos/Customers Logo 05.png"
+                alt="Placeholder"
+              />
+            </div>
+            {/*  */}
+
+
+          </CardsScreenTrustedBy>
         </div>
       </div>
       {/* END TRUSTED BY CONTAINER */}
