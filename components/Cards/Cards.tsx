@@ -4,7 +4,7 @@ import { CardProps } from '@/types'
 
 
 const VibrantPrimaryFill = {
-    style: 'w-full h-full bg-grayDefaultDark-100 rounded-[20px] px-10 py-10 text-white',
+    style: 'w-full h-full bg-grayDefaultDark-100 rounded-[20px] px-10 py-10 text-white ',
 }
 const VibrantSecondaryFill = {
     style: 'w-full h-full bg-grayDefaultDark-200 rounded-[20px] px-20 py-16 text-white',
@@ -66,7 +66,7 @@ const Cards: React.FC<CardProps> = ({
     return (
         <div className={cardType.style}>
             <div className='font-proTextHeavy text-white text-4xl uppercase'> {topic} </div>
-            <div className='font-proDisplayRegular text-white text-xl '>
+            <div className='font-proDisplayRegular text-white text-xl overflow-visible'>
                 {children}
             </div>
         </div>

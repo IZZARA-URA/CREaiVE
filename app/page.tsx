@@ -17,6 +17,9 @@ import {
   CardsScreenTrustedBy
 } from "@/components/Cards";
 
+
+import Holovue from '@/components/Holovue/Holovue'
+
 export default function Home() {
   return (
     <Container>
@@ -121,7 +124,7 @@ export default function Home() {
                     alt="Placeholder"
                   /> */}
                 </div>
-                <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full">
+                <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
                   <img
                     className="w-full h-full rounded-[20px] object-cover object-center"
                     src="nic.png"
@@ -164,7 +167,9 @@ export default function Home() {
         </CarouselsLogosClients>
 
 
-        <CarouselsTechnicalPartners />
+        <div className="py-8 opacity-40">
+          <CarouselsTechnicalPartners />
+        </div>
 
       </div>
       {/* END REAL WORLD CONTAINER */}
@@ -220,15 +225,13 @@ export default function Home() {
             </Cards>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 pt-4 h-[50vh]">
-            <Cards>
-              Holovue
-            </Cards>
+          <div className="grid grid-cols-2 gap-4 pt-4 h-full">
+            <Holovue />
 
             <div className="relative w-full h-full ">
               <div className="absolute inset-x-0 bottom-[25%]">
                 <div className="font-bold text-4xl text-center w-full py-8">
-                  HOLOVUE
+                  Holuvue
                 </div>
                 <div className="flex gap-4 h-full ">
                   <Buttons text="request demo" type="Primary" />

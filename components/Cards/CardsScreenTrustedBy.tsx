@@ -23,7 +23,6 @@ const CardsScreenTrustedBy: React.FC<CardProps> = (
     return (
         <div className={cardType.style}>
             <div className='flex h-full'>
-
                 <div className='w-full h-full rounded-[20px] '>
                     {children}
                 </div>
