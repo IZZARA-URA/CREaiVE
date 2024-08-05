@@ -12,7 +12,7 @@ import { FaMediumM } from "react-icons/fa";
 
 const index = () => {
   return (
-    <footer className='w-screen bg-grayDefaultDark-400 left-0 bottom-0'>
+    <footer className='w-screen bg-grayDefaultDark-400 left-0 bottom-0 mt-[25vh]'>
       <FooterContainer>
         <div>
           <div className='w-full h-[4vh] uppercase pt-8'>

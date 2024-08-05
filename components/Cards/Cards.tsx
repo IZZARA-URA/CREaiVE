@@ -7,7 +7,7 @@ const VibrantPrimaryFill = {
     style: 'w-full h-full bg-grayDefaultDark-100 rounded-[20px] px-10 py-10 text-white ',
 }
 const VibrantSecondaryFill = {
-    style: 'w-full h-full bg-grayDefaultDark-200 rounded-[20px] px-20 py-16 text-white',
+    style: 'w-full h-full bg-grayDefaultDark-200 rounded-[20px] px-10 py-16 text-white',
 }
 const VibrantTertiaryFill = {
     style: 'w-full h-full bg-grayDefaultDark-400 rounded-[20px] p-2 text-white ',

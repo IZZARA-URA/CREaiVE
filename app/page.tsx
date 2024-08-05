@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import Video from "next-video";
+
 
 import Header from "@/components/Header/Header";
 import Container from "@/components/ContainerPage";
@@ -14,11 +13,15 @@ import {
 import {
   Cards,
   CardScreen,
-  CardsScreenTrustedBy
+  CardsScreenTrustedBy,
+  CardImage
 } from "@/components/Cards";
 
+// C:\Users\U\Desktop\CREaiVE\CREaiVE\components\Lacation\index.tsx
+import Location from "@/components/Lacation"
 
-import Holovue from '@/components/Holovue/Holovue'
+
+// import Holovue from '@/components/Holovue/Holovue'
 
 export default function Home() {
   return (
@@ -110,17 +113,17 @@ export default function Home() {
                 <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full overflow-hidden">
                   {/* <img
                     className="w-full h-full rounded-[20px] object-cover object-center"
-                    src="aihumansNisa.png"
+                    src="jack.png"
                     alt="Placeholder"
                   /> */}
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pt-2">
-                <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full">
+                <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full overflow-hidden">
                   {/* <img
                     className="w-full h-full rounded-[20px] object-cover object-center"
-                    src="amber.png"
+                    src="nic.png"
                     alt="Placeholder"
                   /> */}
                 </div>
@@ -141,7 +144,11 @@ export default function Home() {
             <div className="w-full h-[600px] col-span-7">
               <div className="grid grid-cols-4 gap-4 max-h-[300px] h-full pb-2">
                 <div className="col-span-2 bg-grayDefaultDark-500 rounded-[20px] h-full">
-                  02
+                  <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="jack.png"
+                    alt="Placeholder"
+                  />
                 </div>
 
                 <div className="col-span-2 bg-grayDefaultDark-200 rounded-[20px] h-full overflow-hidden">
@@ -154,8 +161,12 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 gap-4 max-h-[300px] h-full pt-2">
-                <div className="col-span-2 bg-grayDefaultDark-0 rounded-[20px] h-full">
-                  04
+                <div className="col-span-2 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
+                  {/* <img
+                    className="w-full h-full rounded-[20px] object-cover object-center"
+                    src="jack.png"
+                    alt="Placeholder"
+                  /> */}
                 </div>
               </div>
             </div>
@@ -186,22 +197,38 @@ export default function Home() {
             <CardScreen
               type="Primary"
               topic="Holovue"
-              body={[
-                "Our cutting-edge holographic display technology revolutionizes advertising and marketing capabilities!",
-                "Our HOLOVUE showcases  content in three formats: pre-recorded, live-streaming, and interactive, creating immersive experiences that captivate any audience",
-              ]}
-            />
+            >
+            </CardScreen>
           </div>
           <div className="grid grid-cols-3 gap-4 mt-4 h-[30vh]">
-            <Cards type="Secondary" >
-
-            </Cards>
-            <Cards type="Secondary" >
-
-            </Cards>
-            <Cards type="Secondary" >
-
-            </Cards>
+            <div className="relative w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white overflow-hidden">
+              <CardImage
+                text="Ai Humans"
+                thums="/BlackWindow.png"
+                image="/AihimanNisa.png"
+                href="/ai-humans"
+              />
+            </div>
+            <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
+              <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
+                <CardImage
+                  text="Ai Microsites"
+                  thums="/BlackWindow.png"
+                  image="/microsite.png"
+                  href="/ai-microsites"
+                />
+              </div>
+            </div>
+            <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
+              <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
+                <CardImage
+                  text="Operational AI lab"
+                  thums="/BlackWindow.png"
+                  image="/AihimanNisa.png"
+                  href="/ai-lab"
+                />
+              </div>
+            </div>
           </div>
         </div>
         {/* END PRODUCTs CONTAINER */}
@@ -221,12 +248,14 @@ export default function Home() {
               TEST
             </Cards>
             <Cards>
-              test
+              TEST
             </Cards>
           </div>
 
           <div className="grid grid-cols-2 gap-4 pt-4 h-full">
-            <Holovue />
+            <div className='relative z-0 h-[60vh] overflow-visible border-[1px] rounded-[20px]'>
+            </div>
+            {/* <Holovue /> */}
 
             <div className="relative w-full h-full ">
               <div className="absolute inset-x-0 bottom-[25%]">
@@ -346,13 +375,18 @@ export default function Home() {
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
-        <div className="grid grid-cols-4 gap-4 h-[30vh] my-20">
+        <div className="grid grid-cols-5 gap-4 h-[30vh] my-20">
           <div className="col-span-3">
-            <Cards />
+            <Location />
 
           </div>
-          <div className="col-span-1">
-            <Cards />
+          <div className="col-span-2">
+            <Cards> 
+              <div>Email</div>
+
+
+
+            </Cards>
           </div>
         </div>
 
