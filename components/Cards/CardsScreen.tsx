@@ -47,7 +47,7 @@ const CardScreen: React.FC<CardProps> = (
                                 <div className='font-proTextHeavy text-4xl pt-6 font-bold uppercase w-full text-center '>
                                     {topic}
                                 </div>
-                                <div className='pt-4'>
+                                <div className='pt-4 px-4 text-justify '>
                                     Holographicbox is a cutting-edge display solution that revolutionizes visual
                                     presentation with its stunning 86-inch transparent screen and advanced holographic technology.
                                     Designed to captivate and engage audiences, the Holographicbox creates immersive 3D visuals that

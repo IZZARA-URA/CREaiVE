@@ -19,7 +19,7 @@ const CardImage = ({ text, image, href }: Props) => {
         <div
             onMouseEnter={() => setHidden(false)}
             onMouseLeave={() => setHidden(true)}
-            className='relative w-full h-full rounded-[20px] overflow-hidden min-h-[500px]'
+            className='relative w-full h-full rounded-[20px] overflow-hidden min-h-[500px] transition-all'
         >
             {
                 hidden ? (
@@ -29,7 +29,7 @@ const CardImage = ({ text, image, href }: Props) => {
                                 {text}
                             </div>
                         </div>
-                        <div className='absolute z-10 overflow-hidden opacity-90 '>
+                        <div className='absolute z-10 overflow-hidden opacity-100 '>
                             <img
                                 src={image}
                                 alt="Aiinfluencer"
@@ -50,7 +50,7 @@ const CardImage = ({ text, image, href }: Props) => {
                             <img
                                 src={image}
                                 alt="Aiinfluencer"
-                                className='object-center w-[100%] opacity-50'
+                                className='object-center w-[100%] opacity-80'
                             />
                         </div>
                     </div>

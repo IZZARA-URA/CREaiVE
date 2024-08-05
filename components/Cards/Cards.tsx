@@ -12,6 +12,10 @@ const VibrantSecondaryFill = {
 const VibrantTertiaryFill = {
     style: 'w-full h-full bg-grayDefaultDark-400 rounded-[20px] p-2 text-white ',
 }
+const FollowUs = {
+    style: 'w-full h-full bg-grayDefaultDark-100 rounded-[20px] px-1 py-10 text-white ',
+}
+
 
 const isChildNull = (children: React.ReactNode) => {
     return Boolean(children === null)
@@ -38,6 +42,8 @@ const Cards: React.FC<CardProps> = ({
             setCardType(VibrantSecondaryFill)
         } else if (type === "Tertiary") {
             setCardType(VibrantTertiaryFill)
+        } else if (type === "FollowUs") {
+            setCardType(FollowUs)
         }
 
 

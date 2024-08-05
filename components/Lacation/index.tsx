@@ -7,7 +7,7 @@ export default function Location() {
     return (
         <div className="overflow-hidden rounded-[20px] w-full h-full max-h-[500px] bg-black shadow-inner">
             <img
-                className="object-center"
+                className="w-full h-full object-cover"
                 src="Location.png"
                 alt="Location"
             />

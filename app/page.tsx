@@ -20,6 +20,9 @@ import {
 // C:\Users\U\Desktop\CREaiVE\CREaiVE\components\Lacation\index.tsx
 import Location from "@/components/Lacation"
 
+import { GrLocation } from "react-icons/gr";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 // import Holovue from '@/components/Holovue/Holovue'
 
@@ -59,7 +62,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="text-[20px] pt-10 text-justify">
+            <div className="text-[20px] pt-10 text-justify ">
               Welcome to CREAIVE, Where CREATIVITY and AI CONVERGE!
               We are a generative AI lab that specializes in making content for any
               creative application. Our goal is to help brands and agencies
@@ -257,12 +260,12 @@ export default function Home() {
             </div>
             {/* <Holovue /> */}
 
-            <div className="relative w-full h-full ">
+            <div className="relative w-full h-full">
               <div className="absolute inset-x-0 bottom-[25%]">
                 <div className="font-bold text-4xl text-center w-full py-8">
                   Holuvue
                 </div>
-                <div className="flex gap-4 h-full ">
+                <div className="flex gap-4 h-full">
                   <Buttons text="request demo" type="Primary" />
                   <Buttons text="learn more" type="PrimaryHover" />
                 </div>
@@ -295,7 +298,7 @@ export default function Home() {
           topic={`Trusted by`}
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
-        <div className="h-[40vh]">
+        <div className="h-[30vh]">
           <CardsScreenTrustedBy
             type="Primary"
             topic="Holovue"
@@ -359,9 +362,6 @@ export default function Home() {
                 alt="Placeholder"
               />
             </div>
-            {/*  */}
-
-
           </CardsScreenTrustedBy>
         </div>
       </div>
@@ -376,16 +376,62 @@ export default function Home() {
         />
 
         <div className="grid grid-cols-5 gap-4 h-[30vh] my-20">
-          <div className="col-span-3">
+          <div className="col-span-2">
             <Location />
 
           </div>
-          <div className="col-span-2">
-            <Cards> 
-              <div>Email</div>
+          <div className="col-span-3">
+            <Cards type="FollowUs">
+              <div className="relative">
+                <div className="flex items-center w-full justify-center m-auto py-auto">
+                  {/*  */}
+                  <div className="w-full h-full text-center justify-center py-2">
+                    <GrLocation className="w-full items-center justify-center m-auto" size={50} />
+                    <div className='text-[16px] font-bold'>
+                      Office
+                    </div>
+                    <div className='text-[14px] py-2'>
 
+                      Come to say hello our office HQ.
+                    </div>
+                    <div className='text-[12px]'>
+                      26/55 Chan Space office building,  <br/>
+                      1st. Floor, Room 5A, Nang Linchi Road, <br/>
+                      Thung Maha Mek Sub-district, <br/>
+                      Sathon District, <br/>
+                      Bangkok 10120 <br/>
+                      Thailand
+                    </div>
 
-
+                  </div>
+                  {/*  */}
+                  <div className="w-full h-full text-center justify-center py-2">
+                    <MdOutlineEmail className="w-full items-center justify-center m-auto" size={50} />
+                    <div className='text-[14px] font-bold'>
+                      Email
+                    </div>
+                    <div className='text-[14px] py-2 '>
+                      We are friendly to talk with you.
+                    </div>
+                    <div className='text-[12px]'>
+                      hello@creaive.ai
+                    </div>
+                  </div>
+                  {/*  */}
+                  <div className="w-full h-full text-center justify-center py-2">
+                    <FaPhoneVolume className="w-full items-center justify-center m-auto" size={50} />
+                    <div className='text-[14px] font-bold'>
+                      Phone
+                    </div>
+                    <div className='text-[14px] py-2'>
+                      Talk to us
+                    </div>
+                    <div className='text-[12px]'>
+                      Tel: (+66) 089-765-7654
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Cards>
           </div>
         </div>
