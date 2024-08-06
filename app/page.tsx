@@ -6,7 +6,8 @@ import Container from "@/components/ContainerPage";
 import Buttons from "@/components/Buttons/Button";
 import {
   CarouselsLogosClients,
-  CarouselsTechnicalPartners
+  CarouselsTechnicalPartners,
+  CarouselsUseCases
 } from "@/components/Carousels/Carousels";
 // import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
 
@@ -245,6 +246,14 @@ export default function Home() {
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
+        <div>
+          <CarouselsUseCases >
+            
+
+          </CarouselsUseCases>
+        </div>
+
+        {/* 
         <div className="h-auto pb-[10vh]">
           <div className="grid grid-cols-2 gap-4 h-[20vh]">
             <Cards>
@@ -258,8 +267,6 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4 pt-4 h-full">
             <div className='relative z-0 h-[60vh] overflow-visible border-[1px] rounded-[20px]'>
             </div>
-            {/* <Holovue /> */}
-
             <div className="relative w-full h-full">
               <div className="absolute inset-x-0 bottom-[25%]">
                 <div className="font-bold text-4xl text-center w-full py-8">
@@ -272,7 +279,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
+        */}
+
       </div>
       {/* END USECASES CONTAINER */}
 
@@ -395,11 +404,11 @@ export default function Home() {
                       Come to say hello our office HQ.
                     </div>
                     <div className='text-[12px]'>
-                      26/55 Chan Space office building,  <br/>
-                      1st. Floor, Room 5A, Nang Linchi Road, <br/>
-                      Thung Maha Mek Sub-district, <br/>
-                      Sathon District, <br/>
-                      Bangkok 10120 <br/>
+                      26/55 Chan Space office building,  <br />
+                      1st. Floor, Room 5A, Nang Linchi Road, <br />
+                      Thung Maha Mek Sub-district, <br />
+                      Sathon District, <br />
+                      Bangkok 10120 <br />
                       Thailand
                     </div>
 
