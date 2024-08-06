@@ -204,7 +204,7 @@ export default function Home() {
             >
             </CardScreen>
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-4 h-[30vh]">
+          <div className="grid grid-cols-3 gap-4 mt-4 h-auto">
             <div className="relative w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white overflow-hidden">
               <CardImage
                 text="Ai Humans"
@@ -248,8 +248,9 @@ export default function Home() {
 
         <div>
           <CarouselsUseCases >
-            
+            <div>
 
+            </div>
           </CarouselsUseCases>
         </div>
 
@@ -385,14 +386,14 @@ export default function Home() {
         />
 
         <div className="grid grid-cols-5 gap-4 h-[30vh] my-20">
-          <div className="col-span-2">
+          {/* <div className="col-span-2">
             <Location />
 
-          </div>
-          <div className="col-span-3">
+          </div> */}
+          <div className="col-span-5">
             <Cards type="FollowUs">
               <div className="relative">
-                <div className="flex items-center w-full justify-center m-auto py-auto">
+                <div className="flex  w-full justify-center m-auto py-auto">
                   {/*  */}
                   <div className="w-full h-full text-center justify-center py-2">
                     <GrLocation className="w-full items-center justify-center m-auto" size={50} />
