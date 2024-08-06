@@ -78,14 +78,12 @@ export default function Home() {
       </div>
       {/* END HOME THUMB CONTAINER */}
 
-
       {/* START REAL WORLD CONTAINER */}
       <div className="h-auto">
         <Header
           topic={`Our impact for the business in Real-World`}
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
-
         <CarouselsRealWord className="w-full max-h-[600px] ">
           <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
             <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
@@ -196,10 +194,10 @@ export default function Home() {
                     preload='none'
                     muted
                     autoPlay
-                    className="object-center"
+                    className="object-cover w-full"
                   >
                     <source
-                      src="/videos/AILAB.mp4"
+                      src="/videos/UsecaseFaceSwap.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -216,7 +214,6 @@ export default function Home() {
       </div>
       {/* END REAL WORLD CONTAINER */}
 
-
       {/* START PRODUCTs CONTAINER */}
       <div className="h-auto">
         <Header
@@ -231,7 +228,7 @@ export default function Home() {
             >
             </CardScreen>
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-4 h-auto">
+          <div className="grid grid-cols-3 gap-2 mt-2 h-auto">
             <div className="relative w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white overflow-hidden">
               <CardImage
                 text="Ai Humans"
@@ -239,11 +236,6 @@ export default function Home() {
                 image="/AihimanNisa.png"
                 href="/ai-humans"
               />
-              {/* <CardVideo
-                text='AI Influencer & Ambrassadors'
-                thums='/BlackWindow.png'
-                video="/AiHumans.mp4"
-              /> */}
             </div>
             <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
               <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
@@ -260,16 +252,15 @@ export default function Home() {
                 <CardImage
                   text="Operational AI lab"
                   thums="/BlackWindow.png"
-                  image="/AihimanNisa.png"
+                  image="/aden.png"
                   href="/ai-lab"
                 />
               </div>
             </div>
           </div>
         </div>
-        {/* END PRODUCTs CONTAINER */}
       </div>
-
+      {/* END PRODUCTs CONTAINER */}
 
       {/* START USECASES CONTAINER */}
       <div className="h-auto">
@@ -285,39 +276,8 @@ export default function Home() {
             </div>
           </CarouselsUseCases>
         </div>
-
-        {/* 
-        <div className="h-auto pb-[10vh]">
-          <div className="grid grid-cols-2 gap-4 h-[20vh]">
-            <Cards>
-              TEST
-            </Cards>
-            <Cards>
-              TEST
-            </Cards>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 pt-4 h-full">
-            <div className='relative z-0 h-[60vh] overflow-visible border-[1px] rounded-[20px]'>
-            </div>
-            <div className="relative w-full h-full">
-              <div className="absolute inset-x-0 bottom-[25%]">
-                <div className="font-bold text-4xl text-center w-full py-8">
-                  Holuvue
-                </div>
-                <div className="flex gap-4 h-full">
-                  <Buttons text="request demo" type="Primary" />
-                  <Buttons text="learn more" type="PrimaryHover" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> 
-        */}
-
       </div>
       {/* END USECASES CONTAINER */}
-
 
       {/* START TRUSTED BY CONTAINER */}
       <div className="h-auto relative ">
@@ -408,7 +368,6 @@ export default function Home() {
         </div>
       </div>
       {/* END TRUSTED BY CONTAINER */}
-
 
       {/* START TRUSTED BY CONTAINER */}
       <div className="h-auto py-10">

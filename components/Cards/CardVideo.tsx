@@ -33,6 +33,7 @@ const CardVideo = ({ text, thums, video }: Props) => {
             <div className='absolute z-0 hover:z-10'>
                 <video
                     loop
+                    autoPlay
                     preload='none'
                     muted // Needs to be there to be able to play
                     onMouseOver={handleOnMouseOver}
