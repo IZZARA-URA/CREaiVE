@@ -1,5 +1,5 @@
 import CarouselsTechnicalPartners from "./CarouselsTechnicalPartners";
-import CarouselsLogosClients from "./CarouselsLogosClients";
+import CarouselsRealWord from "./CarouselsRealWord";
 import CarouselsPreviewRola from "./CarouselsPreviewRola";
 import CarouselsUseCases from "./CarouselsUseCases"
 
@@ -8,7 +8,7 @@ import CarouselsUseCases from "./CarouselsUseCases"
 
 export {
     CarouselsTechnicalPartners,
-    CarouselsLogosClients,
+    CarouselsRealWord,
     CarouselsPreviewRola,
     CarouselsUseCases
 }

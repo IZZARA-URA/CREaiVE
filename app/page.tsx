@@ -5,27 +5,22 @@ import Header from "@/components/Header/Header";
 import Container from "@/components/ContainerPage";
 import Buttons from "@/components/Buttons/Button";
 import {
-  CarouselsLogosClients,
+  CarouselsRealWord,
   CarouselsTechnicalPartners,
   CarouselsUseCases
 } from "@/components/Carousels/Carousels";
-// import CarouselsAutoScroll from "@/components/Carousels/CarouselsAutoScroll";
-
 import {
   Cards,
   CardScreen,
   CardsScreenTrustedBy,
-  CardImage
+  CardImage,
+  CardVideo
 } from "@/components/Cards";
 
-// C:\Users\U\Desktop\CREaiVE\CREaiVE\components\Lacation\index.tsx
-import Location from "@/components/Lacation"
-
+// ICONS
 import { GrLocation } from "react-icons/gr";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
-
-// import Holovue from '@/components/Holovue/Holovue'
 
 export default function Home() {
   return (
@@ -37,15 +32,14 @@ export default function Home() {
             layout="fill"
             src="/HomeImage.png"
             alt="HomeImage"
-
             style={{
-              // display: "absolute",
               zIndex: "-50",
               width: '100%',
               objectFit: "cover"
             }}
           />
         </div>
+        {/*  */}
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1">
             <div className="pt-[25vh]">
@@ -92,18 +86,21 @@ export default function Home() {
           tagline={["Our tools can be helpful for your business, and make the impact to customers interacted make the choices."]}
         />
 
-        <CarouselsLogosClients className="w-full max-h-[600px] pb-[20vh]">
-          {/*  */}
+        <CarouselsRealWord className="w-full max-h-[600px] ">
           <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
-            {/*  */}
-            <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
-              <img
-                className="w-full h-full rounded-[20px] object-cover object-top"
-                src="amber.png"
-                alt="Placeholder"
-              />
+            <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
+              <video
+                loop
+                preload='none'
+                muted
+                autoPlay
+              >
+                <source
+                  src="/videos/Snap finger cloth change.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
-            {/*  */}
             <div className="w-full h-[600px] col-span-7">
               <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pb-2">
                 <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
@@ -115,21 +112,34 @@ export default function Home() {
                 </div>
 
                 <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full overflow-hidden">
-                  {/* <img
-                    className="w-full h-full rounded-[20px] object-cover object-center"
-                    src="jack.png"
-                    alt="Placeholder"
-                  /> */}
+                  <video
+                    loop
+                    preload='none'
+                    muted
+                    autoPlay
+                  >
+                    <source
+                      src="/videos/AiHumans.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-4 max-h-[300px] h-full pt-2">
                 <div className="col-span-2 bg-grayDefaultDark-100 rounded-[20px] h-full overflow-hidden">
-                  {/* <img
-                    className="w-full h-full rounded-[20px] object-cover object-center"
-                    src="nic.png"
-                    alt="Placeholder"
-                  /> */}
+                  <video
+                    loop
+                    preload='none'
+                    muted
+                    autoPlay
+                    className="object-center"
+                  >
+                    <source
+                      src="/videos/AIinfluencerAmbrassador.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
                 <div className="col-span-1 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
                   <img
@@ -145,6 +155,21 @@ export default function Home() {
           {/*  */}
           <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
             {/*  */}
+            <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
+              <video
+                loop
+                preload='none'
+                muted
+                autoPlay
+                className="object-center"
+              >
+                <source
+                  src="/videos/ThairathVideo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
             <div className="w-full h-[600px] col-span-7">
               <div className="grid grid-cols-4 gap-4 max-h-[300px] h-full pb-2">
                 <div className="col-span-2 bg-grayDefaultDark-500 rounded-[20px] h-full">
@@ -166,26 +191,28 @@ export default function Home() {
 
               <div className="grid grid-cols-1 gap-4 max-h-[300px] h-full pt-2">
                 <div className="col-span-2 bg-grayDefaultDark-0 rounded-[20px] h-full overflow-hidden">
-                  {/* <img
-                    className="w-full h-full rounded-[20px] object-cover object-center"
-                    src="jack.png"
-                    alt="Placeholder"
-                  /> */}
+                  <video
+                    loop
+                    preload='none'
+                    muted
+                    autoPlay
+                    className="object-center"
+                  >
+                    <source
+                      src="/videos/AILAB.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
               </div>
             </div>
             {/*  */}
-            <div className="w-full h-[600px] col-span-5 bg-grayDefaultDark-400 rounded-[20px]">
-              01
-            </div>
+
           </div>
-        </CarouselsLogosClients>
-
-
-        <div className="py-8 opacity-40">
+        </CarouselsRealWord>
+        <div className="opacity-40">
           <CarouselsTechnicalPartners />
         </div>
-
       </div>
       {/* END REAL WORLD CONTAINER */}
 
@@ -212,6 +239,11 @@ export default function Home() {
                 image="/AihimanNisa.png"
                 href="/ai-humans"
               />
+              {/* <CardVideo
+                text='AI Influencer & Ambrassadors'
+                thums='/BlackWindow.png'
+                video="/AiHumans.mp4"
+              /> */}
             </div>
             <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
               <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
@@ -445,12 +477,8 @@ export default function Home() {
             </Cards>
           </div>
         </div>
-
       </div>
       {/* END TRUSTED BY CONTAINER */}
-
-
-
     </Container>
   );
 }
