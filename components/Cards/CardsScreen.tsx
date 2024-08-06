@@ -21,7 +21,7 @@ const VibrantPrimaryFill_CardCol_1 = {
 }
 
 
-const CardScreen: React.FC<CardProps> = (
+const CardScreen: React.FC<CardProps> = async (
     {
         children,
         type,
@@ -33,8 +33,7 @@ const CardScreen: React.FC<CardProps> = (
 ) => {
 
     const [cardType, setCardType] = useState(VibrantPrimaryFill_CardCol_1)
-
-    const holuvue_ = useGLTF('../holovue/Holovue.gltf')
+    const {nodes,  materials} = await useGLTF('/../holovue/Holovue.gltf')
     const lightRef = useRef<PointLight>(null);
 
     return (
@@ -87,7 +86,7 @@ const CardScreen: React.FC<CardProps> = (
                                 <mesh>
                                     <primitive
                                         scale={0.25}
-                                        object={holuvue_.scene}
+                                        object={nodes.scene}
                                         position={new THREE.Vector3(
                                             0, -2.5, 0
                                         )}
