@@ -1,27 +1,20 @@
-"use client"
+'use client'
 
-import { CardProps } from '@/types'
 import React from 'react'
 import { useRef, useState } from 'react';
-import {
-    Canvas
-} from '@react-three/fiber'
-import {
-    useGLTF,
-    OrbitControls,
-    Line
-
-} from '@react-three/drei'
-import * as THREE from 'three';
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 import { PointLight } from 'three';
+import { CardProps } from '@/types'
+
+import Holovue from '../Holovue/Holovue';
 
 const VibrantPrimaryFill_CardCol_1 = {
     upper: 'absolute w-full h-full bg-grayDefaultDark-500 rounded-[20px] pl-10 pr-2 py-2 bg-opacity-50 text-white',
     lower: 'relative w-full h-full bg-grayDefaultDark-500 rounded-[20px] '
 }
 
-
-const CardScreen: React.FC<CardProps> = async (
+const CardScreen: React.FC<CardProps> = (
     {
         children,
         type,
@@ -33,7 +26,6 @@ const CardScreen: React.FC<CardProps> = async (
 ) => {
 
     const [cardType, setCardType] = useState(VibrantPrimaryFill_CardCol_1)
-    const {nodes,  materials} = await useGLTF('/../holovue/Holovue.gltf')
     const lightRef = useRef<PointLight>(null);
 
     return (
@@ -81,17 +73,7 @@ const CardScreen: React.FC<CardProps> = async (
                                     intensity={20}
                                     position={[2, 2, 0]}
                                 />
-
-
-                                <mesh>
-                                    <primitive
-                                        scale={0.25}
-                                        object={nodes.scene}
-                                        position={new THREE.Vector3(
-                                            0, -2.5, 0
-                                        )}
-                                    />
-                                </mesh>
+                                <Holovue />
                             </Canvas>
                         </div>
                     </div>
