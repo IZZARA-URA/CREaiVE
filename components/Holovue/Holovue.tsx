@@ -6,8 +6,12 @@ import {
     GLTFLoader
 } from 'three/addons/loaders/GLTFLoader.js';
 
+import { direction } from '@/direction';
+
+// {`${direction}/../holovue/Holovue.gltf`} 
+
 const Holovue = () => {
-    const gltf = useLoader(GLTFLoader, "/../holovue/Holovue.gltf")
+    const gltf = useLoader(GLTFLoader, `${direction}/holovue/Holovue.gltf`)
 
     return (
         <group>

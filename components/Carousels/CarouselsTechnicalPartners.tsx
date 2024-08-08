@@ -6,6 +6,10 @@ type Props = {
   img: string;
 };
 
+
+import { direction } from "@/direction"
+// {`${direction}/logos/Customers Logo 06.png`}
+
 const Card = ({ img }: Props) => {
   return (
     <div className="flex gap-4 mr-4">
@@ -13,7 +17,8 @@ const Card = ({ img }: Props) => {
         <div className="">
           <img
             className="w-full h-full rounded-[20px] "
-            src={img}
+            // {`${direction}/{img}`}
+            src={`${direction}/${img}`}
             alt="Placeholder"
           />
         </div>

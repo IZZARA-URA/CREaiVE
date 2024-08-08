@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
-
 import type { CarouselProps } from "@material-tailwind/react";
+
+import { direction } from "@/direction";
 
 const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
   return (
@@ -42,7 +43,7 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
               autoPlay
             >
               <source
-                src="/videos/AIinfluencerAmbrassador.mp4"
+                src={`${direction}/videos/AIinfluencerAmbrassador.mp4`}  
                 type="video/mp4"
                 className="h-full object-fill"
               />
@@ -57,7 +58,7 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
               autoPlay
             >
               <source
-                src="/videos/MAI_holovue_usecase.mp4"
+                src={`${direction}/videos/MAI_holovue_usecase.mp4`} 
                 type="video/mp4"
               />
             </video>
@@ -71,7 +72,7 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
           <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
             <img
               className="w-full h-full rounded-[20px] object-cover object-top"
-              src="IDE_usecase.jpg"
+              src={`${direction}/IDE_usecase.jpg`} 
               alt="Placeholder"
             />
           </div>
@@ -84,32 +85,13 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
               autoPlay
             >
               <source
-                src="/videos/IDE_dnn_pre.mp4"
+                src={`${direction}/videos/IDE_dnn_pre.mp4`} 
                 type="video/mp4"
               />
             </video>
           </div>
         </div>
       </div>
-
-      {/* <div>
-        <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
-            <img
-              className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
-              alt="Placeholder"
-            />
-          </div>
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
-            <img
-              className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
-              alt="Placeholder"
-            />
-          </div>
-        </div>
-      </div> */}
     </Carousel>
   );
 };
