@@ -233,7 +233,7 @@ export default function Home() {
                 href="/ai-humans"
               />
             </div>
-            <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
+            <div className="relative w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
               <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
                 <CardImage
                   text="Ai Microsites"
@@ -244,12 +244,15 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white">
-              <div className="flex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
+              <div className=" relativeflex h-full items-center justify-center text-[20px] uppercase font-proTextThin">
                 <CardImage
                   text="Operational AI lab"
                   thums="/BlackWindow.png"
-                  image="/aden.png"
+                  image="/Group 92.png"
                   href="/ai-lab"
+                />
+                <img
+
                 />
               </div>
             </div>

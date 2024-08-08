@@ -50,7 +50,7 @@ const CardImage = ({ text, image, href }: Props) => {
                             <img
                                 src={image}
                                 alt="Aiinfluencer"
-                                className='object-cover w-[100%] opacity-80'
+                                // className='object-none w-full opacity-80'
                             />
                         </div>
                     </div>

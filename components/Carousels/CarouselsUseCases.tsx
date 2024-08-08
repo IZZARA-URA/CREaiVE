@@ -23,9 +23,8 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
-              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-              }`}
+              className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                }`}
               onClick={() => setActiveIndex(i)}
             />
           ))}
@@ -35,20 +34,33 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
       <div>
         <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
           {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
-            <img
-              className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
-              alt="Placeholder"
-            />
+          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
+            <video
+              loop
+              preload='none'
+              muted
+              autoPlay
+            >
+              <source
+                src="/videos/AIinfluencerAmbrassador.mp4"
+                type="video/mp4"
+                className="h-full object-fill"
+              />
+            </video>
           </div>
           {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
-            <img
-              className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
-              alt="Placeholder"
-            />
+          <div className="w-full h-[300px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
+            <video
+              loop
+              preload='none'
+              muted
+              autoPlay
+            >
+              <source
+                src="/videos/MAI_holovue_usecase.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </div>
@@ -56,36 +68,40 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
       <div>
         <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
           {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
+          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
             <img
               className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
+              src="IDE_usecase.jpg"
               alt="Placeholder"
             />
           </div>
           {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
-            <img
-              className="w-full h-full rounded-[20px] object-cover object-top"
-              src="amber.png"
-              alt="Placeholder"
-            />
+          <div className="w-full h-[300px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
+            <video
+              loop
+              preload='none'
+              muted
+              autoPlay
+            >
+              <source
+                src="/videos/IDE_dnn_pre.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </div>
 
-      <div>
-        <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">
-          {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
+      {/* <div>
+        <div className="grid grid-cols-12 gap-4 items-center text-center mx-2">}
+          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
             <img
               className="w-full h-full rounded-[20px] object-cover object-top"
               src="amber.png"
               alt="Placeholder"
             />
           </div>
-          {/*  */}
-          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px]">
+          <div className="w-full h-[500px] col-span-6 bg-grayDefaultDark-400 rounded-[20px] overflow-hidden">
             <img
               className="w-full h-full rounded-[20px] object-cover object-top"
               src="amber.png"
@@ -93,7 +109,7 @@ const CarouselsUseCases: React.FC<CarouselProps> = ({ children }) => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </Carousel>
   );
 };
