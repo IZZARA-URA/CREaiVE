@@ -10,8 +10,8 @@ import { CardProps } from '@/types'
 import Holovue from '../Holovue/Holovue';
 
 const VibrantPrimaryFill_CardCol_1 = {
-    upper: 'absolute w-full h-full bg-grayDefaultDark-500 rounded-[20px] pl-10 pr-2 py-2 bg-opacity-50 text-white',
-    lower: 'relative w-full h-full bg-grayDefaultDark-500 rounded-[20px] '
+    upper: 'absolute w-full h-[518px] bg-grayDefaultDark-500 rounded-[20px] pl-10 pr-2 py-2 bg-opacity-50 text-white',
+    lower: 'relative w-full h-[518px] bg-grayDefaultDark-500 rounded-[20px] '
 }
 
 const CardScreen: React.FC<CardProps> = (
@@ -51,7 +51,7 @@ const CardScreen: React.FC<CardProps> = (
                             </div>
                         </div>
 
-                        <div className='w-full h-full rounded-[20px] bg-white '>
+                        <div className='w-full h-[500px] rounded-[20px] bg-white '>
                             <Canvas
                                 className='overflow-visible rounded-[20px]'>
                                 <OrbitControls

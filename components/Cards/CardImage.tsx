@@ -19,7 +19,7 @@ const CardImage = ({ text, image, href }: Props) => {
         <div
             onMouseEnter={() => setHidden(false)}
             onMouseLeave={() => setHidden(true)}
-            className='relative w-full h-full rounded-[20px] overflow-hidden min-h-[500px] transition-all'
+            className='relative w-full h-full rounded-[20px] overflow-hidden min-h-[350px] transition-all'
         >
             {
                 hidden ? (
@@ -50,7 +50,6 @@ const CardImage = ({ text, image, href }: Props) => {
                             <img
                                 src={image}
                                 alt="Aiinfluencer"
-                                // className='object-none w-full opacity-80'
                             />
                         </div>
                     </div>

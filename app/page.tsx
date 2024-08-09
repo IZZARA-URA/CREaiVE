@@ -215,9 +215,7 @@ export default function Home() {
           ]}
         />
         <div className="grid grid-cols-1 ">
-          <div className="h-[40vh]">
-            <CardScreen type="Primary" topic="Holovue" />
-          </div>
+          <CardScreen type="Primary" topic="Holovue" />
           <div className="grid grid-cols-3 gap-2 mt-2 h-auto">
             <div className="relative w-full h-full bg-grayDefaultDark-200 rounded-[20px] text-white overflow-hidden">
               <CardImage

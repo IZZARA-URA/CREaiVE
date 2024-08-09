@@ -8,7 +8,6 @@ import {
 
 import { direction } from '@/direction';
 
-// {`${direction}/../holovue/Holovue.gltf`} 
 
 const Holovue = () => {
     const gltf = useLoader(GLTFLoader, `${direction}/holovue/Holovue.gltf`)
